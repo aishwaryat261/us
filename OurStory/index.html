@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story, My Forever ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h3>♥ Our Story</h3>
+    <button id="musicBtn">♫ Music Off</button>
+  </header>
+
+  <!-- Welcome screen -->
+  <section id="home" class="screen active">
+    <p class="small-title">A LITTLE JOURNEY THROUGH US</p>
+    <div class="big-heart">♥</div>
+    <p class="script">To my favourite person,</p>
+    <h1>Our Story,<br><span>My Forever.</span></h1>
+    <p class="description">
+      Every love story is beautiful, but ours is my favourite.
+    </p>
+    <button class="main-btn" id="startBtn">Enter Our Story ♡</button>
+  </section>
+
+  <!-- Quiz screen -->
+  <section id="quiz" class="screen">
+    <p class="small-title">CHAPTER ONE · OUR MEMORIES</p>
+    <h2 id="question">Where did our story begin?</h2>
+    <p id="questionNumber">Memory 1 of 5</p>
+
+    <div id="options"></div>
+
+    <input id="typedAnswer" class="hidden"
+      type="text" placeholder="Type your answer here">
+
+    <p id="feedback"></p>
+
+    <button class="main-btn" id="submitBtn" disabled>
+      Unlock Memory ♡
+    </button>
+
+    <div id="memoryCard" class="memory-card hidden">
+      <img id="memoryPhoto" src="" alt="Our memory">
+      <p id="memoryDate"></p>
+      <h3 id="memoryCaption"></h3>
+      <p id="memoryMessage"></p>
+    </div>
+  </section>
+
+  <!-- Timeline screen -->
+  <section id="timeline" class="screen">
+    <p class="small-title">CHAPTER TWO · OUR LITTLE UNIVERSE</p>
+    <h2>Little Moments,<br><span>Big Feelings.</span></h2>
+
+    <div class="timeline-item">
+      <p>✦ [SPECIAL DATE]</p>
+      <h3>The Day We Met</h3>
+      <img src="assets/memory-1.jpeg" alt="First memory">
+      <p>The beginning of our beautiful story.</p>
+    </div>
+
+    <div class="timeline-item">
+      <p>✦ [FAVOURITE DATE]</p>
+      <h3>Our Favourite Memory</h3>
+      <img src="assets/memory-2.jpeg" alt="Favourite memory">
+      <p>A moment I will always keep in my heart.</p>
+    </div>
+
+    <div class="timeline-item">
+      <p>✦ TODAY & ALWAYS</p>
+      <h3>Still Choosing You</h3>
+      <p>Our story is still being written, together.</p>
+    </div>
+
+    <button class="main-btn" id="finalBtn">
+      One Last Surprise ♥
+    </button>
+  </section>
+
+  <!-- Final screen -->
+  <section id="final" class="screen">
+    <div class="big-heart">♥</div>
+    <p class="small-title">MY FAVOURITE PERSON</p>
+    <h2>Every Future<br><span>Has You In It.</span></h2>
+
+    <p class="description">
+      If I could choose again, I would still choose you.
+      You are my favourite person and my forever.
+    </p>
+
+    <div class="score-card">
+      <p>YOUR MEMORY SCORE</p>
+      <h2 id="score">0 / 5</h2>
+    </div>
+
+    <button class="main-btn" id="letterBtn">
+      Open Your Love Letter 💌
+    </button>
+
+    <div id="letter" class="letter hidden">
+      <p class="script">My dearest love,</p>
+      <p>
+        Thank you for being part of my story.
+        In a thousand lifetimes, I would still look for you.
+        You are my favourite chapter, today and always.
+      </p>
+      <p>Forever yours, ❤️<br>[Your Name]</p>
+    </div>
+
+    <button class="replay-btn" id="replayBtn">
+      ↻ Replay Our Memories
+    </button>
+  </section>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/romantic-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
